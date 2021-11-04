@@ -2717,7 +2717,7 @@ textarea.form-control-lg {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
+  align-items: center;
   width: 100%;
 }
 .input-group > .form-control,

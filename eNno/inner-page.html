@@ -13,6 +13,8 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -44,32 +46,27 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-            <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Principal</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Conócenos</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Contactanos</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Seguidos</a></li>
-                    </ul>
-                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" >
-                        <span class="d-flex align-items-center">
-                            <i class="bi bi-door-closed"></i>
-                            <span class="small">Iniciar sesion</span>
-                        </span>
-                    </button>
-                </div>
-            </div>
-        </nav>
-      </body>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="#hero">Principal</a></li>
+          <li><a class="nav-link scrollto" href="#about">Conocenos</a></li>
+          <li><a class="nav-link scrollto" href="#services">Contactanos</a></li>
+          <li class="dropdown"><a href="#"><span></span> Viajes <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#" >Conductores</a></li>
+              <li><a href="#" class="active nav-link scrollto" >Buscar rutas</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span></span> Iniciar sesion <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Como pasajero</a></li>
+              <li><a href="#">Como conductore</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
   </header><!-- End Header -->
 
@@ -80,10 +77,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
+          <h2>Busqueda de rutas</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+            <li>Busqueda de rutas</li>
           </ol>
         </div>
 
@@ -92,9 +89,31 @@
 
     <section class="inner-page">
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card shadow">
+              <div class="card-title text-center border-bottom">
+                <h2 class="p-3">Con quien deseas viajar hoy?</h2>
+                <div class="input-group rounded px-2 py-3">
+                  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                  aria-describedby="search-addon" />
+                  <span class="input-group-text border-0" id="search-addon">
+                    <i class="bi bi-search"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="card-body">
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="map" ></div>
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script async
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6AEnPbliP_K65KDo50E68EBnZLI4pf0Q&callback=initMap">
+        </script>
       </div>
     </section>
 
