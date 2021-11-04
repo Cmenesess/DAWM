@@ -8,6 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root {
+  --bs-blue: #2937f0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -788,7 +792,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #16df7e;
+  background: var(--bs-blue);
   background-size: cover;
   padding: 60px 0;
 }
