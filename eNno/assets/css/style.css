@@ -17,7 +17,11 @@
   border-radius: 20px;
   border-style: hidden;
 }
-
+.row_margin{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
 .pics {
   height: auto;
   width: 15%;
@@ -34,6 +38,14 @@
     font-size: 50%;
   }
 }
+@media (max-width: 575px) {
+  .texto-boton{
+    font-size: 50%;
+  }
+  .px-sm{
+    width: 45%;
+  }
+}
 
 
 #reservar {
@@ -48,6 +60,9 @@
   background: #16df7e;
   border-style: none;
   margin: auto;
+}
+#texto{
+  font-size: 30%;
 }
 
 #ingresar,#Registrar{
@@ -74,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 .mapDiv {
-  grid-area: 1/1/4/4;
+  grid-area: 1/1/4/3;
   z-index: 0;
   height: 100%;
   width: 100%;
@@ -84,10 +99,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 
 }
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+.mapa{
+  grid-template-columns: 25vw 1fr ;
+  grid-template-rows: 20vh 30vh 30vh;
 }
 .carta{
   grid-area: 1/1/2/2;
@@ -158,6 +172,11 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   #header {
     padding: 12px 0;
+  }
+}
+@media (max-width: 767px) {
+  .mapDiv {
+    height:40vh ;
   }
 }
 
@@ -538,6 +557,7 @@ section {
   .section-title span {
     font-size: 38px;
   }
+
 }
 
 /*--------------------------------------------------------------
