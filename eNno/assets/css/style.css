@@ -8,8 +8,39 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+#portfolio {
+  background: #f9f9fa;
+}
+
+#cont {
+  background: #FFF;
+  border-radius: 20px;
+  border-style: hidden;
+}
+
+.pics {
+  height: auto;
+  width: 15%;
+  max-width: 40%;
+}
+
+
+#reservar {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px 10px 20px;
+  border-radius: 4px;
+  color: #ffffff;
+  background: #16df7e;
+  border-style: none;
+  margin: auto;
+}
 
 #ingresar,#Registrar{
+
   background-color: #206bfb;
 }
 
