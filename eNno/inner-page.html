@@ -13,6 +13,8 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -44,32 +46,27 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-            <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Principal</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Conócenos</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Contactanos</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Seguidos</a></li>
-                    </ul>
-                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" >
-                        <span class="d-flex align-items-center">
-                            <i class="bi bi-door-closed"></i>
-                            <span class="small">Iniciar sesion</span>
-                        </span>
-                    </button>
-                </div>
-            </div>
-        </nav>
-      </body>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="#hero">Principal</a></li>
+          <li><a class="nav-link scrollto" href="#about">Conocenos</a></li>
+          <li><a class="nav-link scrollto" href="#services">Contactanos</a></li>
+          <li class="dropdown"><a href="#"><span></span> Viajes <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#" >Conductores</a></li>
+              <li><a href="#" class="active nav-link scrollto" >Buscar rutas</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span></span> Iniciar sesion <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Como pasajero</a></li>
+              <li><a href="#">Como conductore</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
   </header><!-- End Header -->
 
@@ -80,10 +77,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
+          <h2>Busqueda de rutas</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+            <li>Busqueda de rutas</li>
           </ol>
         </div>
 
@@ -92,9 +89,28 @@
 
     <section class="inner-page">
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+        <div class="grid">
+          <div class="carta">
+            <div class="card shadow">
+              <div class="card-title text-center border-bottom">
+                <h2 class="p-3">Con quien deseas viajar hoy?</h2>
+                <div class="input-group rounded px-2 py-3">
+                  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                  aria-describedby="search-addon" />
+                  <span class="input-group-text border-0" id="search-addon">
+                    <i class="bi bi-search"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="card-body">
+                  
+              </div>
+            </div>
+          </div>
+          <div class="mapDiv ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9116914820584!2d-79.89839638477518!3d-2.1871684378903353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6ddfcdfeb4c1%3A0xd83c8605b54a89d7!2sAvenida%209%20de%20Octubre%20%26%20Tungurahua%2C%20Guayaquil%20090310!5e0!3m2!1sen!2sec!4v1636047476769!5m2!1sen!2sec" frameborder="0" class="pic"allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
     </section>
 

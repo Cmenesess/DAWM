@@ -8,6 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+#ingresar {
+  background-color: #206bfb;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -26,6 +31,27 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+.mapDiv {
+  grid-area: 1/1/4/4;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+.pic{
+  width: 100%;
+  height: 100%;
+
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.carta{
+  grid-area: 1/1/2/2;
+  z-index: 1;
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -65,6 +91,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+}
+#map {
+  height: 100%;
 }
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -788,7 +817,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #16df7e;
+  background: #14c871;
   background-size: cover;
   padding: 60px 0;
 }
