@@ -8,6 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root {
+  --bs-blue: #2937f0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -28,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .mapDiv {
   grid-area: 1/1/4/4;
-  z-index: -1;
+  z-index: 0;
   height: 100%;
   width: 100%;
 }
@@ -44,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .carta{
   grid-area: 1/1/2/2;
+  z-index: 1;
 }
 
 
@@ -811,7 +816,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #16df7e;
+  background: var(--bs-blue);
   background-size: cover;
   padding: 60px 0;
 }
