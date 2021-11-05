@@ -15,25 +15,38 @@
   <link href="assets/css/style.css" rel="stylesheet">
     <title>Carpol</title>
 </head>
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <a href="index.html"><img src="assets/img/logo_adobespark.png" alt="Logo" style="max-width: 20%;"></a>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="#hero">Principal</a></li>
+        <li><a class="nav-link scrollto" href="#about">Conocenos</a></li>
+        <li><a class="nav-link scrollto" href="#services">Contactanos</a></li>
+        <li class="dropdown"><a href="#"><span></span> Viajes <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="">Conductores</a></li>
+            <li><a href="inner-page.html">Busca rutas</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="active"><span></span> Iniciar sesion <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="login.html" >Como pasajero</a></li>
+            <li><a href="login.html">Como conductore</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a class="navbar-brand fw-bold" href="#page-top">Start Bootstrap</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Principal</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Conócenos</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Contactanos</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Seguidos</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="container">
+    <section class="container hero" >
         <div class="row justify-content-center mt-5">
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="card shadow">
@@ -56,6 +69,9 @@
                   </div>
                   <div class="d-grid">
                     <button id="ingresar" type="submit" class="btn text-light main-bg">Ingresar</button>
+                  </div>
+                  <div class="d-grid py-3">
+                    <button id="Registrar" type="submit" class="btn text-light main-bg">Registrarte</button>
                   </div>
                 </form>
               </div>
