@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 
-#ingresar {
+#ingresar,#Registrar{
   background-color: #206bfb;
 }
 
@@ -329,6 +329,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   padding-top: 82px;
 }
+.hero {
+  width: 100%;
+  height: 80vh;
+  padding-top: 82px;
+}
+
 #hero h1 {
   margin: 0;
   font-size: 48px;
