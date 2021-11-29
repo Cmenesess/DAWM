@@ -13,37 +13,61 @@ let current = 1;
 
 nextBtnFirst.addEventListener("click", function(event){
   event.preventDefault();
-  slidePage.style.marginLeft = "-25%";
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
+  text_1 = document.getElementById('ingreso-name1')
+  text_2 = document.getElementById('ingreso-name2')
+  if(text_1.value.length>0 && text_2.value.length>0){
+    slidePage.style.marginLeft = "-25%";
+    bullet[current - 1].classList.add("active");
+    progressCheck[current - 1].classList.add("active");
+    progressText[current - 1].classList.add("active");
+    current += 1;
+  }else{
+    alert("¡Debe llenar todos los campos!")
+  }
 });
 nextBtnSec.addEventListener("click", function(event){
   event.preventDefault();
-  slidePage.style.marginLeft = "-50%";
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
+  text_1 = document.getElementById('ingreso-email')
+  text_2 = document.getElementById('ingreso-phone')
+  if(text_1.value.length>0 && text_2.value.length>0){
+    slidePage.style.marginLeft = "-50%";
+    bullet[current - 1].classList.add("active");
+    progressCheck[current - 1].classList.add("active");
+    progressText[current - 1].classList.add("active");
+    current += 1;
+  }else{
+    alert("¡Debe llenar todos los campos!")
+  }
 });
 nextBtnThird.addEventListener("click", function(event){
   event.preventDefault();
-  slidePage.style.marginLeft = "-75%";
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
+  text_1 = document.getElementById('ingreso-date')
+  text_2 = document.getElementById('ingreso-gender')
+  if(text_1.value.length>0 && text_2.value.length>0){
+    slidePage.style.marginLeft = "-75%";
+    bullet[current - 1].classList.add("active");
+    progressCheck[current - 1].classList.add("active");
+    progressText[current - 1].classList.add("active");
+    current += 1;
+  }else{
+    alert("¡Debe llenar todos los campos!") 
+  }
 });
 submitBtn.addEventListener("click", function(){
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
-  setTimeout(function(){
-    alert("Your Form Successfully Signed up");
-    location.reload();
-  },800);
+  text_1 = document.getElementById('ingreso-user')
+  text_2 = document.getElementById('ingreso-password')
+    if(text_1.value.length>0 && text_2.value.length>0){
+    bullet[current - 1].classList.add("active");
+    progressCheck[current - 1].classList.add("active");
+    progressText[current - 1].classList.add("active");
+    current += 1;
+    setTimeout(function(){
+      alert("Your Form Successfully Signed up");
+      window.location.href = "index.html";
+    },100);
+  }else{
+    alert("¡Debe llenar todos los campos!") 
+  }
 });
 
 prevBtnSec.addEventListener("click", function(event){
@@ -70,3 +94,5 @@ prevBtnFourth.addEventListener("click", function(event){
   progressText[current - 2].classList.remove("active");
   current -= 1;
 });
+
+

@@ -8,11 +8,11 @@
    </head>
    <body>
       <div class="container">
-         <header>Signup Form</header>
+         <header>Registro</header>
          <div class="progress-bar">
             <div class="step">
                <p>
-                  Name
+                  Nombre
                </p>
                <div class="bullet">
                   <span>1</span>
@@ -21,7 +21,7 @@
             </div>
             <div class="step">
                <p>
-                  Contact
+                  Contacto
                </p>
                <div class="bullet">
                   <span>2</span>
@@ -30,7 +30,7 @@
             </div>
             <div class="step">
                <p>
-                  Birth
+                  Nacimiento
                </p>
                <div class="bullet">
                   <span>3</span>
@@ -51,89 +51,89 @@
             <form action="#">
                <div class="page slide-page">
                   <div class="title">
-                     Basic Info:
+                     Informacion básica:
                   </div>
                   <div class="field">
                      <div class="label">
-                        First Name
+                        Primer nombre
                      </div>
-                     <input type="text">
+                     <input id="ingreso-name1" type="text" required>
                   </div>
                   <div class="field">
                      <div class="label">
-                        Last Name
+                        Primer apellido
                      </div>
-                     <input type="text">
+                     <input id="ingreso-name2" type="text" required>
                   </div>
                   <div class="field">
-                     <button class="firstNext next">Next</button>
+                     <button id="btn-name" class="firstNext next">Siguiente</button>
                   </div>
                </div>
                <div class="page">
                   <div class="title">
-                     Contact Info:
+                     Informacion de contacto:
                   </div>
                   <div class="field">
                      <div class="label">
-                        Email Address
+                        Direccion email
                      </div>
-                     <input type="email">
+                     <input id="ingreso-email" type="email" required>
                   </div>
                   <div class="field">
                      <div class="label">
-                        Phone Number
+                        Telefono celular
                      </div>
-                     <input type="Number">
+                     <input id="ingreso-phone" type="Number" required>
                   </div>
                   <div class="field btns">
-                     <button class="prev-1 prev">Previous</button>
-                     <button id="ingresar" type="submit" class="btn text-light main-bg">Ingresar</button>
+                     <button id="btn_Validar" class="prev-1 prev">Anterior</button>
+                     <button id="btn_Validar" class="next-1 next">Siguiente</button>
                   </div>
                </div>
                <div class="page">
                   <div class="title">
-                     Date of Birth:
+                     Fecha de nacimiento:
                   </div>
                   <div class="field">
                      <div class="label">
-                        Date
+                        Fecha
                      </div>
-                     <input type="date">
+                     <input id="ingreso-date" type="date" required>
                   </div>
                   <div class="field">
                      <div class="label">
-                        Gender
+                        Género
                      </div>
-                     <select>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Other</option>
+                     <select id="ingreso-gender" required>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Otro</option>
                      </select>
                   </div>
                   <div class="field btns">
-                     <button class="prev-2 prev">Previous</button>
-                     <button class="next-2 next">Next</button>
+                     <button id="btn_Validar" class="prev-2 prev">Anterior</button>
+                     <button id="btn_Validar" class="next-2 next">Siguiente</button>
                   </div>
                </div>
                <div class="page">
                   <div class="title">
-                     Login Details:
+                     Detalles de la cuenta:
                   </div>
                   <div class="field">
                      <div class="label">
-                        Username
+                        Usuario
                      </div>
-                     <input type="text">
+                     <input id="ingreso-user" type="text" required>
                   </div>
                   <div class="field">
                      <div class="label">
-                        Password
+                        Contraseña
                      </div>
-                     <input type="password">
+                     <input id="ingreso-password" type="password" required>
                   </div>
                   <div class="field btns">
-                     <button class="prev-3 prev">Previous</button>
-                     <button class="submit">Submit</button>
+                     <button id="btn_Validar" class="prev-3 prev">Anterior</button>
+                     <button id="btn_Validar" class="submit">Crear cuenta</button>
                   </div>
                </div>
             </form>
