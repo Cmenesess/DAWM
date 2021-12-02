@@ -1,42 +1,14 @@
-const conductores={
-    "Carlos Meneses":{
-        "foto":"assets/img/Carlos1.png",
-        "posicion":[-2.18333,-79.8833],
-        "Descripcion1":"Salida: 11:30 am los martes,miercoles y jueves",
-        "Descripcion2":"Capacidad maximo: 3 personas"
-    },
-    "Joel Alvarado":{
-        "foto":"assets/img/Joel.png",
-        "posicion":[ -2.1293,-79.9031],
-        "Descripcion1":"Salida: 11:30 am los martes,miercoles y jueves",
-        "Descripcion2":"Capacidad maximo: 2 personas"
-    },
-    "Luis Rodriguez":{
-        "foto":"assets/img/Alfredo.png",
-        "posicion":[-2.1629,-79.9389],
-        "Descripcion1":"Salida: 11:30 am los martes,miercoles y jueves",
-        "Descripcion2":"Capacidad maximo: 4 personas"
-    },
-    "Anguel Guale":{
-        "foto":"assets/img/Guale.png",
-        "posicion":[-2.16667,-79.8333],
-        "Descripcion1":"Salida: 11:30 am los martes,miercoles y jueves",
-        "Descripcion2":"Capacidad maximo: 4 personas"
-    },
-    "Estefano":{
-        "foto":"assets/img/Estefano.png",
-        "posicion":[-1.86667,-79.9833],
-        "Descripcion1":"Salida: 11:30 am los martes,miercoles y jueves",
-        "Descripcion2":"Capacidad maximo: 4 personas"
-    }
-};
+const conductores="https://raw.githubusercontent.com/Cmenesess/DAWM/main/visitas.json";
 const tileProvider="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 let myMap= L.map("mapa").setView([-2.18333,-79.8833],13)
 L.tileLayer(tileProvider,{
     maxZoom:18,
 }).addTo(myMap)
 function marcadores(){
-    for(const conductor in conductores){
+    fetch(urlVisitas)
+    .then(function(response) { return response.json(); })
+    .then(function(data){
+        for(const conductor in data){
         let marker= L.marker(conductores[conductor]["posicion"]).addTo(myMap);
         let persona=conductores[conductor];
         marker.onmouseover = function() {mouseOver()};
