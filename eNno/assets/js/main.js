@@ -263,3 +263,51 @@ function initMap() {
   });
 
 })()
+
+const intro = introJs();
+intro.setOptions({
+  steps: [
+    {
+      intro:"Bienvenido a CarPol! 👋\nSigue esta guía rápida para que aproveches al máximo la página"
+    },
+    {
+      element: "#navbar",
+      title:"Navegacion",
+      intro: "Con estas opciones puedes moverte a otras secciones con un solo click"
+    },
+    {
+      element: "#step-two",
+      title: "Escoge tu dirección",
+      intro: "Viaja adonde desees con un click",
+    },
+    {
+      element: "#step-three",
+      title: "Inicia tu viaje",
+      intro: "Comienza a viajar y recepta pasajeros"
+    },
+    {
+      element: "#step-four",
+      title: "Programa viajes",
+      intro: "Puedes dejar agendado tus viajes con anticipación"
+    },
+    {
+      element: "#step-five",
+      title: "Comentarios",
+      intro: "Aquí puedes revisar los comentarios de nuestros usuarios"
+    },
+    {
+      element: "#step-six",
+      title: "Equipo",
+      intro: "Estos son los desarrolladores de la página que estás visitando"
+    },
+    {
+      element: "#step-seven",
+      title: "¿Dudas?",
+      intro: "Dejanos un mensaje en esta sección"
+    }],
+    showProgress: true,
+    showBullets:false,
+    disableOnInteraction:true
+});
+intro.start();
+
