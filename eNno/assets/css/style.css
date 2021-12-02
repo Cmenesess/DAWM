@@ -22,10 +22,19 @@
   flex-wrap: wrap;
   
 }
+
 .pics {
   height: auto;
   width: 15%;
   max-width: 35%;
+  
+}
+.imagenes {
+  height: auto;
+  width: 50%;
+  max-width: 50%;
+  display:block;
+  margin:auto;
 }
 
 .texto-boton{

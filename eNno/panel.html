@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Panel de Control</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Panel de Control</h1>
+    </div>
+    <!-- ./title -->
+    <div class="grid-row">
+        <div class="col visitas" id="visits">
+            <div class="inner">
+              <h3 id="visitas">150</h3>
+            </div>
+            <div class="text">
+                <p>Visitas</p>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col registrados" id="registers">
+            <div class="inner">
+              <h3 id="registrados">53</h3>
+            </div>
+            <div class="text">
+                <p>Usuarios registrados</p>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col concretados" id="completed">
+            <div class="inner">
+              <h3 id="concretados">44</h3>
+            </div>
+            <div class="text">
+                <p>Viajes concretados</p>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col cancelados" id="cancels">
+            <div class="inner">
+              <h3 id="cancelados">9</h3>
+            </div>
+            <div class="text">
+                <p>Viajes cancelados</p>
+            </div>
+        </div>
+        <!-- ./col -->
+      </div>
+    <!-- /.row -->
+    <svg class="line-chart" id="svg"></svg>
+    <!-- /svg -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

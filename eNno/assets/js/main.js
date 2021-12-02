@@ -1,16 +1,16 @@
-/**
+/*
 * Template Name: eNno - v4.6.0
 * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
-  "use strict";
+
+  
 
   /**
    * Easy selector helper function
    */
-  const select = (el, all = false) => {
+   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
       return [...document.querySelectorAll(el)]
@@ -18,22 +18,6 @@
       return document.querySelector(el)
     }
   }
-
-  // Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: -25.344, lng: 131.036 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
 
   /**
    * Easy event listener function
@@ -262,7 +246,6 @@ function initMap() {
     }
   });
 
-})()
 
 const intro = introJs();
 intro.setOptions({
@@ -310,4 +293,3 @@ intro.setOptions({
     disableOnInteraction:true
 });
 intro.start();
-
