@@ -64,7 +64,7 @@ submitBtn.addEventListener("click", function(){
     setTimeout(() => {
       window.location.replace("index.html")
     }, 10);
-    alert("Your Form Successfully Signed up");
+    alert("Su formulario se ha registrado con éxito");
   }else{
     alert("¡Debe llenar todos los campos!") 
   }
