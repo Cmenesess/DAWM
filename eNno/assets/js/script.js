@@ -61,10 +61,10 @@ submitBtn.addEventListener("click", function(){
     progressCheck[current - 1].classList.add("active");
     progressText[current - 1].classList.add("active");
     current += 1;
-    setTimeout(function(){
-      alert("Your Form Successfully Signed up");
-      window.location.href = "index.html";
-    },100);
+    setTimeout(() => {
+      window.location.replace("index.html")
+    }, 10);
+    alert("Your Form Successfully Signed up");
   }else{
     alert("¡Debe llenar todos los campos!") 
   }
