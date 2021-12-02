@@ -2,9 +2,10 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
 }
 
-div.row {
+div.grid-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 5%;
@@ -85,3 +86,74 @@ div.title {
 svg {
     margin: 0% 30% 0%;
 }
+
+div.strap {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr 1fr;
+    margin: 0% 5% 0.5%;
+    background-color: #fff;
+    padding: 2.5%;
+    border-left: 0.2rem solid rgb(15, 117, 104);
+    filter: drop-shadow(0 0 0.03rem black);
+}
+
+div.old-strap {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr 1fr;
+    margin: 0% 5% 0.5%;
+    background-color: #fff;
+    padding: 2.5%;
+    filter: drop-shadow(0 0 0.03rem black);
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+p.bold-name {
+    font-weight: bold;
+}
+
+.button-accept, .button-deny {
+    display: inline-block;
+    font-size: 100%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin: 10%;
+}
+
+.button-accept {
+    background-color: #4CAF50;
+}
+
+.button-deny {
+    background-color: red;
+}
+
+.button-accept:hover {
+    background-color: #3e8e41;
+}
+
+.button-deny:hover {
+    background-color: rgba(105, 4, 4, 0.808);
+}
+
+.button-accept:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-deny:active {
+    background-color: rgba(105, 4, 4, 0.808);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
