@@ -24,7 +24,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -53,21 +53,16 @@
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto" href="index.html">Principal</a></li>
-        <li><a class="nav-link scrollto" href="index.html#team">Conocenos</a></li>
-        <li><a class="nav-link scrollto" href="index.html#contact">Contactanos</a></li>
-        <li class="dropdown"><a href="#"><span></span> Viajes <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="Conductores.html">Conductores</a></li>
-            <li><a href="inner-page.html">Busca rutas</a></li>
-          </ul>
-        </li>
-        <li class="dropdown active"><a href="#"><span></span> Iniciar sesion <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="login.html">Como pasajero</a></li>
-            <li><a href="login.html">Como conductor</a></li>
-          </ul>
-        </li>
+        <li><a class="nav-link scrollto" href="indexConductores.html">Principal</a></li>
+        <li><a class="nav-link scrollto" href="indexConductores.html#team">Conocenos</a></li>
+        <li><a class="nav-link scrollto" href="indexConductores.html#contact">Contactanos</a></li>
+        <li class="dropdown"><a href="#"><span> Viajes</span>  <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="notification.html">Notificaciones</a></li>
+              <li><a href="localizacion.html" class="active">Selecciona ubicación</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="login.html">Iniciar sesion</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
@@ -82,10 +77,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Selecciona tu ruta</h2>
+          <h2>Selecciona tu ubicación</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Selecciona tu ruta</li>
+            <li>Selecciona tu ubicación</li>
           </ol>
         </div>
 
@@ -93,14 +88,61 @@
     </section><!-- End Breadcrumbs -->
     <section class="inner-page ">
       <div class="container">
-        <div class="d-md-grid mapa d-flex flex-column align-items-center" style=" max-height: 50%;">
+        <div class="d-md-grid mapa d-flex flex-column align-items-center" >
           <div id ="mapa" class="mapDiv"><script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script></div>
-          <div class="carta py-md-0 py-sm-4">
-            <div class="card shadow " style="width: 18rem;">
-              <div class=" text-center Titulo">
-                <h2 class="p-3">Con quien vas a viajar hoy?</h2>
+          <div class="carta2 py-md-0 py-sm-4">
+            <div class="card shadow text-center " style="width: 18rem;">
+              <div class=" text-center Titulo border-bottom">
+                <h2 class="p-3">Llene la siguiente información</h2>
               </div>
-              <div class="card-body"></div>
+              <div class="card-body">
+                <form action="" onsubmit="return submitformat(event)">
+                  <div class="form-group">
+                    <label for="form-check-label">Escoga la inicial del dia que va a realizar los recorrido:</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="L">
+                    <label class="form-check-label" for="inlineCheckbox1">L</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="M">
+                    <label class="form-check-label" for="inlineCheckbox2">M</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Mi">
+                    <label class="form-check-label" for="inlineCheckbox3">Mi</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="J">
+                    <label class="form-check-label" for="inlineCheckbox3">J</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="V">
+                    <label class="form-check-label" for="inlineCheckbox3">V</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="S">
+                    <label class="form-check-label" for="inlineCheckbox3">S</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="D">
+                    <label class="form-check-label" for="inlineCheckbox3">D</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Salida">Hora de salida: </label>
+                    <input type="time" class="form-control" id="salida" name="salida"  required>
+                  </div>
+                  <div class="form-group">
+                    <label for="Salida">Hora de regreso:</label>
+                    <input type="time" class="form-control" id="regreso" name="regreso"  required>
+                  </div>
+                  <div class="form-group pb-2">
+                    <label for="personas">Numero de personas:</label>
+                    <input id="personas" class="form-control" type="number" max="10" required>
+                  </div>
+                  <button type="button" class="btn btn-primary" >Enviar</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -158,6 +200,7 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/mapa2.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

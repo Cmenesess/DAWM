@@ -16,5 +16,20 @@ function onMapClick(e) {
     var marker = L.marker(arreglo).addTo(myMap);
     marker.bindPopup("Esta es la direccion <br>que se mostrara a los pasajeros.").openPopup();
 }
-
+function submitformat(){
+    var exist_marker=false;
+    myMap.eachLayer(function(layer){
+        if (layer instanceof L.Marker) {
+            exist_marker=true;
+        }
+    });
+    if(!exist_marker) {
+        alert("Marque primero su ubicacion");
+        e.preventDefault();
+        return false;
+    }else{
+        return true;
+    }
+}
 myMap.on('click', onMapClick);
+    

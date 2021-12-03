@@ -134,8 +134,8 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 .mapa{
-  grid-template-columns: 0.7fr 1fr 1fr ;
-  grid-template-rows: 50vh 30vh;
+  grid-template-columns: 18rem 1fr 1fr ;
+  grid-template-rows: 50vh 30vh 15vh;
 }
 .carta{
   grid-area: 1/1/1/1;
