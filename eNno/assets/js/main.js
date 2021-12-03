@@ -159,13 +159,6 @@
   });
 
   /**
-   * Initiate glightbox 
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-  /**
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
@@ -292,4 +285,16 @@ intro.setOptions({
     showBullets:false,
     disableOnInteraction:true
 });
-intro.start();
+/*intro.start();
+
+  /**
+   * Initiate glightbox 
+   */
+  
+   const glightbox = GLightbox({
+     onOpen:null
+  });
+
+  document.getElementById('tutorial').addEventListener('click',()=>{
+    intro.start();
+  }, true)
