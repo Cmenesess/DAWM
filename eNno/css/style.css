@@ -156,4 +156,43 @@ p.bold-name {
     background-color: rgba(105, 4, 4, 0.808);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+}
+
+@media only screen and (max-width: 415px) {
+
+    div.strap {
+        display: grid;
+        grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+        grid-template-columns: 1fr;
+    }
+    
+    div.old-strap {
+        display: grid;
+        grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        max-width: 40%;
+        height: auto;
+        margin: auto;
+    }
+
+    div.old-strap div, div.strap div {
+        text-align: center;
+    }
+
+    p.bold-name {
+        font-weight: bold;
+        margin-top: 5%;
+        font-size: 125%;
+    }
+
+    p.bold-name + p {
+        font-size: 110%;
+    }
+
+    .button-accept, .button-deny {
+        margin: 0% 20% 5%;
+    }
+}
