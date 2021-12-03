@@ -1,0 +1,42 @@
+{
+    "Carlos Meneses":{
+        "foto":"assets/img/Carlos1.png",
+        "Descripcion1":"Salida: 11:30 am",
+        "proximasSalidas":{
+            "Salida1":["Lunes, 25 de Octubre",2],
+            "Salida2":["Miercoles,28 de Octubre",2]
+        }     
+    },
+    "Joel Alvarado":{
+        "foto":"assets/img/Joel.png",
+        "Descripcion":"Salida: 11:30 am",
+        "proximasSalidas":{
+            "Salida1":["Lunes, 25 de Octubre",2],
+            "Salida2":["Miercoles,28 de Octubre",2]
+        }
+    },
+    "Luis Rodriguez":{
+        "foto":"assets/img/Alfredo.png",
+        "Descripcion":"Salida: 11:30 am",
+        "proximasSalidas":{
+            "Salida1":["Lunes, 25 de Octubre",2],
+            "Salida2":["Miercoles,28 de Octubre",2]
+        }
+    },
+    "Anguel Guale":{
+        "foto":"assets/img/Guale.png",
+        "Descripcion":"Salida: 11:30 am",
+        "proximasSalidas":{
+            "Salida1":["Lunes, 25 de Octubre",2],
+            "Salida2":["Miercoles,28 de Octubre",2]
+        }
+    },
+    "Estefano":{
+        "foto":"assets/img/Estefano.png",
+        "Descripcion":"Salida: 11:30 am",
+        "proximasSalidas":{
+            "Salida1":["Lunes, 25 de Octubre",2],
+            "Salida2":["Miercoles,28 de Octubre",2]
+        }
+    }
+}
