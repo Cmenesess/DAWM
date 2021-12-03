@@ -285,15 +285,6 @@ intro.setOptions({
     showBullets:false,
     disableOnInteraction:true
 });
-/*intro.start();
-
-  /**
-   * Initiate glightbox 
-   */
-  
-   const glightbox = GLightbox({
-     onOpen:null
-  });
 
   document.getElementById('tutorial').addEventListener('click',()=>{
     intro.start();
