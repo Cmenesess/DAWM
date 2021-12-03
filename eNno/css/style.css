@@ -159,6 +159,7 @@ p.bold-name {
 }
 
 @media only screen and (max-width: 415px) {
+
     div.strap {
         display: grid;
         grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
@@ -184,6 +185,11 @@ p.bold-name {
     p.bold-name {
         font-weight: bold;
         margin-top: 5%;
+        font-size: 125%;
+    }
+
+    p.bold-name + p {
+        font-size: 110%;
     }
 
     .button-accept, .button-deny {
