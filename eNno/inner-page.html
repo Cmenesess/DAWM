@@ -58,7 +58,7 @@
         <li><a class="nav-link scrollto" href="index.html#contact">Contactanos</a></li>
         <li class="dropdown"><a href="#"><span></span> Viajes <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="">Conductores</a></li>
+            <li><a href="Conductores.html">Conductores</a></li>
             <li><a href="inner-page.html">Busca rutas</a></li>
           </ul>
         </li>
@@ -91,24 +91,22 @@
 
       </div>
     </section><!-- End Breadcrumbs -->
-
     <section class="inner-page ">
       <div class="container">
-        <div class="d-md-grid mapa d-flex flex-column">
+        <div class="d-md-grid mapa d-flex flex-column align-items-center" style=" max-height: 50%;">
+          <div id ="mapa" class="mapDiv"><script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script></div>
           <div class="carta py-md-0 py-sm-4">
-            <div class="card shadow">
+            <div class="card shadow " style="width: 18rem;">
               <div class=" text-center Titulo">
                 <h2 class="p-3">Con quien vas a viajar hoy?</h2>
               </div>
               <div class="card-body"></div>
             </div>
           </div>
-          <div id ="map" class="mapDiv" ></div>
-          <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script>
         </div>
       </div>
     </section>
-
+    
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->

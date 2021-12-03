@@ -22,6 +22,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+  <link href="https://unpkg.com/intro.js/themes/introjs-modern.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -44,14 +46,14 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar ">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Principal</a></li>
+      <nav id="navbar" class="navbar " >
+        <ul >
+          <li><a class="nav-link scrollto active" href="#hero" >Principal</a></li>
           <li><a class="nav-link scrollto" href="#team">Conocenos</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contactanos</a></li>
           <li class="dropdown"><a href="#"><span></span> Viajes <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="">Conductores</a></li>
+              <li><a href="Conductores.html">Conductores</a></li>
               <li><a href="inner-page.html">Busca rutas</a></li>
             </ul>
           </li>
@@ -77,7 +79,7 @@
           <h1>La mejor forma de llegar a tu destino</h1>
           <h2>Con CarPol puedes contactar a conductores politécnicos!</h2>
           <div class="d-flex d-grid gap-2 justify-content-evenly">
-            <a href="#about" class="btn-get-started scrollto">Seleccionar tu destino</a>
+            <a href="#about" class="btn-get-started scrollto" id="step-two">Seleccionar tu destino</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
@@ -101,7 +103,7 @@
             <h1>Muevete donde desees con un solo click</h1>
             <h2>Con CarPol puedes moverte dentro y fuera del campus rapidamente con un click</h2>
             <div class="d-flex justify-content-evenly">
-              <a href="#about" class="btn-get-started scrollto">Iniciar viaje</a>
+              <a href="#about" class="btn-get-started scrollto" id="step-three">Iniciar viaje</a>
             </div>
           </div>
         </div>
@@ -116,7 +118,7 @@
             <h1>Mantente informado de los viajes más próximos</h1>
             <h2>Revisa constantemente los viajes programados en una hora específica y selecciona el que más te convenga.</h2>
             <div class="d-flex justify-content-evenly">
-              <a href="#about" class="btn-get-started scrollto">Ver viajes programados</a>
+              <a href="#about" class="btn-get-started scrollto" id="step-four">Ver viajes programados</a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
@@ -184,10 +186,10 @@
     <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title" id="step-five">
           <span>Comentarios</span>
           <h2>Comentarios</h2>
-          <p>Palabras de usuarios que han usado nuestro servicio</p>
+          <p> Palabras de usuarios que han usado nuestro servicio</p>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -288,8 +290,10 @@
         </div>
     </div>
     <div class="container px-5">
-        <h1 class="text-center py-3">Equipo</h1>
+      <div  id="step-six">
+        <h1 class="text-center py-3"">Equipo</h1>
         <p class="text-center py-2">Conoce al equipo del desarrollo de esta pagina web</p>
+      </div>
         <div class="row-cols-auto row justify-content-between">
 
             <div class="col-12 col-lg-4 col-md-6 mx-auto ">
@@ -320,7 +324,7 @@
     <section id="contact" class="contact">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title" id="step-seven">
           <span>Contáctanos</span>
           <h2>Contáctanos</h2>
           <p>Si tienes alguna duda no dudes en comunicarte con nosotros</p>
@@ -430,6 +434,8 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -440,6 +446,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
 
 </body>
 
